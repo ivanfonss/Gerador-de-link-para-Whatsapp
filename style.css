@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+body {
+   
+    background-image: url(img/bgpc.png);
+    width: 480px;
+    margin-top: 70px; 
+    margin-left:38%;
+    margin-right:40%; 
+}
+header{
+
+    font-family: 'Roboto', sans-serif;    
+    display: flex;
+    background-color: #daf7c1;
+    width: 380px;
+    margin: 8px;
+    padding: 8px 18px;
+    border-radius: 14px 14px 14px 14px ;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.2) ;
+    align-items: center;
+    justify-content: space-between;
+    font-size:large;
+    height: 80px;
+}
+#perfil{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border:2px solid rgb(111, 196, 104);
+   
+}
+#perfil:hover{
+    transform: scale(1.1);
+   
+}
+.caixa{
+    
+    margin: 70px;
+    font-family: 'Roboto', sans-serif;    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.caixa div {
+
+    background-color: #daf7c1;
+    width: 320px;
+    margin: 8px;
+    padding: 8px 18px;
+    border-radius: 14px 0 14px 14px ;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.2) ;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#caixa-dois {
+    background-color: #fff;
+    border-radius: 0 14px 14px 14px ;
+    text-align: left;
+    margin-left:-150px;
+    margin-right: 40px;
+    padding: 8px 18px;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.2) ;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+}
+.caixa img{
+    width: 40px;
+    height: 40px;
+    text-align: right;
+    
+}
+.caixa div:hover {
+    box-shadow: 4px 4px rgba(0, 0, 0, 0.4) ;
+  
+}
+.campo-texto, .input-padrao{
+    background-color: #daf7c1;
+    border: none;
+    font-family:'Roboto', sans-serif ;
+    outline:none;
+	font-size:15px;
+    width: 90%;
+    text-align: center;
+}
+.input-padrao::placeholder {
+    text-align: center;
+}
+input[type="submit"]{
+    display: none;
+}
+#texto {
+    text-align: left;
+}
+#resposta {
+    text-align: left;
+    width: 70%;
+}
+
+#img, #lk{
+    margin-right: 5px;
+    display: block;
+}
+#img, #lk, #cop{
+    cursor: pointer;
+    transition: border 0.2s;
+}
+#img:hover, #lk:hover {
+    transform: scale(1.1);
+    border:4px solid #fff;
+    border-radius: 50%;
+}
+#cop:hover {
+    transform: scale(1.1);
+}
+footer{
+	bottom: 0;
+    
+    position:absolute;
+	align-items: center;
+	text-align: center;
+    margin-left:120px;
+    
+}
+.contatos li {
+	display: inline-block;
+	padding-right: 40px;
+	
+}
+.contatos img {
+	max-width: 30px;
+	margin-left:20px;
+	margin-bottom: 1px;
+}
+.autor {
+
+	margin-left: -17px;
+	font-size: 12px;
+	color: grey;
+	
+}
+#err{
+    color: red;
+    font-weight: bold;
+    text-align: center;
+    margin-left: 14px;
+    
+}
+@media screen and (max-width: 480px){
+    body {
+        background-image: url(img/bg.png);
+        width: 100%;
+        margin: 30px;
+        height: 100%;
+    }
+    header{
+        margin-left:0 ;
+    }
+    .caixa{
+        margin-left: 5px;
+        margin-right: -80px;
+    }
+    footer{
+        position:fixed;
+        margin-left: 90px;
+        height: 8%;
+    }
+}
